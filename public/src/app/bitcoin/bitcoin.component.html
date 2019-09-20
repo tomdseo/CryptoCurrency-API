@@ -1,0 +1,41 @@
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">{{ btcName }}</h1>
+  <p class="lead">Symbol: {{ btcSymbol }} | Highest of All Time Price: ${{ btcHigh }} | Highest of All Time Date: {{ btcHighDate }}</p>
+</div>
+
+<div class="container">
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 box-shadow">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Current Price</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">${{ btcPrice }} <small class="text-muted">USD</small></h1>
+      </div>
+    </div>
+    <div class="card mb-4 box-shadow">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">1 Day Difference</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">${{ btc1d }} <small class="text-muted">USD</small></h1>
+      </div>
+    </div>
+    <div class="card mb-4 box-shadow">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">30 Day Difference</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">${{ btc30d }} <small class="text-muted">USD</small></h1>
+
+      </div>
+    </div>
+  </div>
+  <footer class="container text-center pt-3 my-md-5 pt-md-5 border-top">
+    <img src="{{ btcImage }}" style="max-height: 100px">
+    <h5 class="lead mt-5">There are {{ btcSupply }} {{ btcName }} Circulating.</h5>
+    <p class="lead text-muted">Last updated: {{ btcPriceDate }}</p>
+    <a class="text-muted" href="https://p.nomics.com/cryptocurrency-bitcoin-api">API Provided by Nomics</a>
+  </footer>
+</div>
+

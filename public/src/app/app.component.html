@@ -1,0 +1,14 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+    <p class="my-0 mr-md-auto display-4">Cryptocurrency API</p>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 text-dark" [routerLink]="['/bitcoin']">Bitcoin</a>
+      <a class="p-2 text-dark" [routerLink]="['/ethereum']">Ethereum</a>
+    </nav>
+  </div>
+</body>
+
+<router-outlet></router-outlet>
